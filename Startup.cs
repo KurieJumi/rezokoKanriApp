@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using rezokoKanriApp.Models;
 
 namespace rezokoKanriApp
 {
@@ -33,6 +35,17 @@ namespace rezokoKanriApp
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            // Use SQL Database if in Azure, otherwise, use SQLite
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                services.AddDbContext<rezokoKanriAppContext>(options =>
+                        options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+            else
+                services.AddDbContext<rezokoKanriAppContext>(options =>
+                        options.UseSqlServer(Configuration.GetConnectionString("rezokoKanriAppContext")));
+
+            // Automatically perform database migration
+            services.BuildServiceProvider().GetService<rezokoKanriAppContext>().Database.Migrate();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

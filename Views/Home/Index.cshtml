@@ -8,20 +8,23 @@
             <p></p>
             <p>Manage your food inventory here</p>
         </div>
-        <div class="row">
+        <div class="card-group row">
             <div class="col">
-                <div class="card bg-primary text-white">
-                    <a class="card-body text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Storage Location</a>
+                <div class="card">
+                    <a class="card-body bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Storage Location</a>
+                    <div class="card-footer">Description here</div>
+                    </div>
+                </div>
+            <div class="col">
+                <div class="card">
+                    <a class="card-body bg-primary text-white" asp-area="" asp-controller="StoredItemsClasses" asp-action="Index">Stored Items</a>
+                    <div class="card-footer">Description here</div>
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-primary text-white">
-                    <a class="card-body text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Stored Items</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-primary text-white">
-                    <a class="card-body text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Food Recipie</a>
+                <div class="card">
+                    <a class="card-body bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Food Recipe</a>
+                    <div class="card-footer">Description here</div>
                 </div>
             </div>
         </div>
