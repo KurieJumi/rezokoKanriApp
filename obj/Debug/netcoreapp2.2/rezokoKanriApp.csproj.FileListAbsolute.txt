@@ -28,3 +28,8 @@ C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\rezokoKa
 C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\rezokoKanriApp.dll
 C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\rezokoKanriApp.pdb
 C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\rezokoKanriApp.csproj.CopyComplete
+C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\Razor\Views\StoredItemsClasses\Create.g.cshtml.cs
+C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\Razor\Views\StoredItemsClasses\Delete.g.cshtml.cs
+C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\Razor\Views\StoredItemsClasses\Details.g.cshtml.cs
+C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\Razor\Views\StoredItemsClasses\Edit.g.cshtml.cs
+C:\Users\kurie.jumi\source\repos\rezokoKanriApp\obj\Debug\netcoreapp2.2\Razor\Views\StoredItemsClasses\Index.g.cshtml.cs
